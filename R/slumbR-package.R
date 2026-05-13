@@ -29,14 +29,12 @@
 "_PACKAGE"
 
 ## usethis namespace: start
-#' @importFrom dplyr mutate select filter arrange left_join bind_rows rename
-#'   group_by summarise across everything n
-#' @importFrom tidyr pivot_wider pivot_longer unnest_wider
-#' @importFrom lubridate ymd ymd_hms hm hours minutes as_datetime
-#' @importFrom purrr map map_dfr map_chr map_lgl keep discard
-#' @importFrom rlang abort warn inform .data
+#' @importFrom dplyr bind_rows
+#' @importFrom lubridate ymd_hms
+#' @importFrom purrr map map_dfr map_chr map_int keep
+#' @importFrom rlang abort warn inform
 #' @importFrom cli cli_alert_success cli_alert_warning cli_alert_info
-#'   cli_progress_bar cli_progress_update cli_progress_done
-#' @importFrom jsonlite read_json fromJSON
+#' @importFrom jsonlite read_json
+#' @importFrom stats setNames
 ## usethis namespace: end
 NULL

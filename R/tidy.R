@@ -1,6 +1,6 @@
 # R/tidy.R — Tidy reshaping helpers for Sleep Diaries data
 
-# ─── diary_long() ─────────────────────────────────────────────────────────────
+# --- diary_long() -------------------------------------------------------------
 
 #' Extract the long-format diary data frame from a study or export
 #'
@@ -20,29 +20,25 @@ diary_long <- function(x) {
   UseMethod("diary_long")
 }
 
-#' @export
+#' @exportS3Method slumbR diary_long
 diary_long.slumbr_study <- function(x) x$diary
 
-#' @export
+#' @exportS3Method slumbR diary_long
 diary_long.slumbr_export <- function(x) x$diary
 
-#' @export
+#' @exportS3Method slumbR diary_long
 diary_long.data.frame <- function(x) x
 
-# ─── diary_wide() ─────────────────────────────────────────────────────────────
+# --- diary_wide() -------------------------------------------------------------
 
 #' Pivot diary entries to wide format — one row per participant per night
 #'
 #' Merges matching morning and evening entries for the same participant and
 #' date into a single row, prefixing morning columns with `m_` and evening
-#' columns with `e_`. Dates with only one entry type (common at study start/end)
-#' are included with `NA` for the missing half.
+#' columns with `e_`.
 #'
-#' @param x A `slumbr_study`, `slumbr_export`, or plain long-format data frame
-#'   as returned by [diary_long()].
-#' @return A data frame with one row per participant × date. Columns:
-#'   `participant_id`, `date`, all morning columns prefixed `m_`, all evening
-#'   columns prefixed `e_`.
+#' @param x A `slumbr_study`, `slumbr_export`, or plain long-format data frame.
+#' @return A data frame with one row per participant x date.
 #'
 #' @examples
 #' \dontrun{
@@ -55,7 +51,6 @@ diary_long.data.frame <- function(x) x
 #' @export
 diary_wide <- function(x) {
   df <- diary_long(x)
-
   if (nrow(df) == 0) return(df)
 
   morning_cols <- c(
@@ -75,38 +70,32 @@ diary_wide <- function(x) {
     "comments_evening"
   )
 
-  # ── Morning half ──
-  m_df <- df[df$entry_type == "morning", , drop = FALSE]
+  m_df   <- df[df$entry_type == "morning", , drop = FALSE]
   m_keep <- intersect(c("participant_id", "date", morning_cols), names(m_df))
-  m_df <- m_df[, m_keep, drop = FALSE]
+  m_df   <- m_df[, m_keep, drop = FALSE]
   names(m_df)[!names(m_df) %in% c("participant_id", "date")] <-
     paste0("m_", names(m_df)[!names(m_df) %in% c("participant_id", "date")])
 
-  # ── Evening half ──
-  e_df <- df[df$entry_type == "evening", , drop = FALSE]
+  e_df   <- df[df$entry_type == "evening", , drop = FALSE]
   e_keep <- intersect(c("participant_id", "date", evening_cols), names(e_df))
-  e_df <- e_df[, e_keep, drop = FALSE]
+  e_df   <- e_df[, e_keep, drop = FALSE]
   names(e_df)[!names(e_df) %in% c("participant_id", "date")] <-
     paste0("e_", names(e_df)[!names(e_df) %in% c("participant_id", "date")])
 
-  # ── Full outer join on participant_id × date ──
   wide <- merge(m_df, e_df, by = c("participant_id", "date"), all = TRUE)
   wide <- wide[order(wide$participant_id, wide$date), ]
   rownames(wide) <- NULL
   wide
 }
 
-# ─── study_summary() ──────────────────────────────────────────────────────────
+# --- study_summary() ----------------------------------------------------------
 
 #' Summarise a study's diary data at the participant level
-#'
-#' Computes per-participant descriptive statistics across all morning entries.
-#' Useful for producing a participant-level overview table.
 #'
 #' @param x A `slumbr_study`, `slumbr_export`, or long-format data frame.
 #' @param na.rm Logical. Remove NAs before computing means. Default `TRUE`.
 #'
-#' @return A data frame with one row per participant. Columns:
+#' @return A data frame with one row per participant and columns:
 #'   `participant_id`, `n_morning`, `n_evening`, `n_nights`,
 #'   `mean_tst_h`, `mean_se_pct`, `mean_sol_min`, `mean_waso_min`,
 #'   `mean_quality`, `mean_restedness`, `pct_early_waking`.
@@ -130,7 +119,6 @@ study_summary <- function(x, na.rm = TRUE) {
   n_e <- as.data.frame(table(evening$participant_id), stringsAsFactors = FALSE)
   names(n_e) <- c("participant_id", "n_evening")
 
-  # Participants present in either
   all_ids <- union(morning$participant_id, evening$participant_id)
   out <- data.frame(participant_id = all_ids, stringsAsFactors = FALSE)
   out <- merge(out, n_m, by = "participant_id", all.x = TRUE)
@@ -139,20 +127,14 @@ study_summary <- function(x, na.rm = TRUE) {
   out[is.na(out$n_evening), "n_evening"] <- 0L
   out$n_nights <- pmax(out$n_morning, out$n_evening)
 
-  # Per-participant means from morning entries
-  agg <- function(col) {
-    if (!col %in% names(morning)) return(setNames(rep(NA_real_, nrow(out)), out$participant_id))
-    tapply(morning[[col]], morning$participant_id, mean, na.rm = na.rm)
-  }
-
   for (pid in out$participant_id) {
     m_sub <- morning[morning$participant_id == pid, , drop = FALSE]
-    out[out$participant_id == pid, "mean_tst_h"]       <- mean(m_sub$tst_min,   na.rm = na.rm) / 60
-    out[out$participant_id == pid, "mean_se_pct"]      <- mean(m_sub$se_pct,    na.rm = na.rm)
-    out[out$participant_id == pid, "mean_sol_min"]     <- mean(m_sub$sol_min,   na.rm = na.rm)
-    out[out$participant_id == pid, "mean_waso_min"]    <- mean(m_sub$waso_min,  na.rm = na.rm)
-    out[out$participant_id == pid, "mean_quality"]     <- mean(m_sub$sleep_quality, na.rm = na.rm)
-    out[out$participant_id == pid, "mean_restedness"]  <- mean(m_sub$restedness,    na.rm = na.rm)
+    out[out$participant_id == pid, "mean_tst_h"]      <- mean(m_sub$tst_min,       na.rm = na.rm) / 60
+    out[out$participant_id == pid, "mean_se_pct"]     <- mean(m_sub$se_pct,        na.rm = na.rm)
+    out[out$participant_id == pid, "mean_sol_min"]    <- mean(m_sub$sol_min,       na.rm = na.rm)
+    out[out$participant_id == pid, "mean_waso_min"]   <- mean(m_sub$waso_min,      na.rm = na.rm)
+    out[out$participant_id == pid, "mean_quality"]    <- mean(m_sub$sleep_quality, na.rm = na.rm)
+    out[out$participant_id == pid, "mean_restedness"] <- mean(m_sub$restedness,    na.rm = na.rm)
     ew <- m_sub$early_waking
     out[out$participant_id == pid, "pct_early_waking"] <-
       if (length(ew) > 0) mean(ew == TRUE, na.rm = na.rm) * 100 else NA_real_
