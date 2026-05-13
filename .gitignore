@@ -12,3 +12,5 @@
 
 # devtools state
 .RData
+/doc/
+/Meta/

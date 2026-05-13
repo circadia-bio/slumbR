@@ -1,0 +1,169 @@
+---
+title: "Getting started with slumbR"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{Getting started with slumbR}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+```{r setup, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment  = "#>"
+)
+library(slumbR)
+```
+
+## Overview
+
+slumbR is the R companion to the [Sleep Diaries app](https://sleepdiaries.circadia-lab.uk). When a study ends, participants export their data as a JSON file. This vignette walks through a complete analysis using three example participants bundled with the package.
+
+The three participants were designed to cover contrasting clinical profiles:
+
+| Code | Name | Profile |
+|---|---|---|
+| CIRCADIA-2025-P001 | Sarah Chen | Chronic insomnia, evening chronotype |
+| CIRCADIA-2025-P002 | James Okonkwo | Healthy sleeper, morning chronotype |
+| CIRCADIA-2025-P003 | Priya Mehta | Rotating night-shift nurse, extreme social jetlag |
+
+> **Note:** These are fictional participants created for demonstration purposes only. All data are simulated.
+
+---
+
+## Loading example data
+
+The example JSON files are bundled in `inst/extdata/`. Use `system.file()` to locate them:
+
+```{r load-study}
+extdata <- system.file("extdata", package = "slumbR")
+study   <- read_study(extdata, verbose = FALSE)
+study
+```
+
+`read_study()` returns a `slumbr_study` object with three slots:
+
+- `$diary` — long-format data frame, one row per diary entry
+- `$wide` — wide-format data frame, one row per participant × night
+- `$scores` — questionnaire results, one row per participant × instrument
+
+---
+
+## Diary data: long format
+
+```{r diary-long}
+head(study$diary[, c("participant_id", "date", "entry_type",
+                     "bed_time", "rise_time", "sol_min",
+                     "tst_min", "se_pct", "sleep_quality")])
+```
+
+Morning entries are automatically enriched with derived sleep variables. For example, `tst_min` (total sleep time) is computed as TIB − SOL − WASO, and `se_pct` (sleep efficiency) as TST / TIB × 100.
+
+---
+
+## Diary data: wide format
+
+Wide format merges morning and evening entries for the same night into one row, with `m_` and `e_` prefixes:
+
+```{r diary-wide}
+head(study$wide[, c("participant_id", "date",
+                    "m_tst_min", "m_se_pct", "m_sleep_quality",
+                    "e_caffeine_drinks", "e_exercised")])
+```
+
+---
+
+## Participant-level summary
+
+`study_summary()` computes per-participant means across the full protocol:
+
+```{r summary}
+summary_df <- study_summary(study)
+print(summary_df[, c("participant_id", "n_morning", "mean_tst_h",
+                     "mean_se_pct", "mean_sol_min", "mean_quality")])
+```
+
+The contrast between participants is immediately visible: P002 (James) shows high TST and SE while P001 (Sarah) and P003 (Priya) fall well below clinical thresholds.
+
+---
+
+## Clinical flags
+
+Each morning entry includes binary flags for commonly used clinical thresholds:
+
+| Flag | Threshold |
+|---|---|
+| `m_sol_flag` | SOL > 30 min |
+| `m_se_flag` | SE < 85% |
+| `m_waso_flag` | WASO > 30 min |
+| `m_tst_flag` | TST < 7 h |
+
+```{r flags}
+flags <- study$wide[, c("participant_id", "date",
+                         "m_sol_flag", "m_se_flag",
+                         "m_waso_flag", "m_tst_flag")]
+
+# Proportion of nights flagged per participant
+aggregate(cbind(m_sol_flag, m_se_flag, m_waso_flag, m_tst_flag) ~ participant_id,
+          data  = flags,
+          FUN   = function(x) round(mean(x, na.rm = TRUE) * 100, 1))
+```
+
+---
+
+## Questionnaire scores
+
+```{r scores}
+scores <- study$scores[, c("participant_id", "questionnaire", "score")]
+scores
+```
+
+To re-score an instrument from raw answers (e.g. to verify or recompute with updated algorithms):
+
+```{r rescore}
+# Re-score Sarah Chen's ESS
+sarah_ess         <- study$exports[["CIRCADIA-2025-P001"]]$questionnaires
+sarah_ess_answers <- sarah_ess[sarah_ess$questionnaire == "ess", "answers"][[1]]
+
+score_questionnaire("ess", sarah_ess_answers)
+```
+
+---
+
+## Accessing a single participant
+
+Individual exports are stored in `study$exports`, keyed by participant ID:
+
+```{r single}
+p001 <- study$exports[["CIRCADIA-2025-P001"]]
+p001
+
+# All morning entries
+morning <- p001$diary[p001$diary$entry_type == "morning", ]
+cat("Mean SOL:", round(mean(morning$sol_min, na.rm = TRUE), 1), "min\n")
+cat("Mean SE: ", round(mean(morning$se_pct,  na.rm = TRUE), 1), "%\n")
+```
+
+---
+
+## Re-scoring all questionnaires
+
+`score_all_questionnaires()` re-scores a questionnaire data frame and appends `score_r` and `label_r` columns:
+
+```{r rescore-all}
+rescored <- score_all_questionnaires(study$scores)
+rescored[, c("participant_id", "questionnaire", "score", "score_r", "label_r")]
+```
+
+---
+
+## Next steps
+
+- Use `diary_wide()` directly on any long-format data frame if you've done your own pre-processing
+- Use `compute_sleep_vars()` to recompute derived variables after modifying raw timing fields
+- See `?score_questionnaire` for full documentation of each instrument's scoring algorithm
+- All eight instruments are listed by `available_instruments()`
+
+```{r instruments}
+available_instruments()
+```
