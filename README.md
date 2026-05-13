@@ -5,6 +5,12 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](./LICENSE)
 [![R](https://img.shields.io/badge/R-%3E%3D4.1-276DC3)](https://www.r-project.org/)
 [![R CMD CHECK](https://github.com/circadia-bio/slumbR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/circadia-bio/slumbR/actions/workflows/R-CMD-check.yaml)
+[![Status](https://img.shields.io/badge/status-early%20development-orange)](https://github.com/circadia-bio/slumbR)
+
+---
+
+> [!WARNING]
+> **slumbR is in early development and has not been formally tested.** The API may change without notice, scoring algorithms have not yet been validated against reference implementations, and the package has not undergone peer review. Use with caution and verify outputs independently before using in any research context.
 
 ---
 
