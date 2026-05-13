@@ -20,13 +20,16 @@ diary_long <- function(x) {
   UseMethod("diary_long")
 }
 
-#' @exportS3Method slumbR diary_long
+#' @rdname diary_long
+#' @export
 diary_long.slumbr_study <- function(x) x$diary
 
-#' @exportS3Method slumbR diary_long
+#' @rdname diary_long
+#' @export
 diary_long.slumbr_export <- function(x) x$diary
 
-#' @exportS3Method slumbR diary_long
+#' @rdname diary_long
+#' @export
 diary_long.data.frame <- function(x) x
 
 # --- diary_wide() -------------------------------------------------------------
