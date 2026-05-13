@@ -1,0 +1,669 @@
+{
+  "participant": "James Okonkwo",
+  "researchCode": "CIRCADIA-2025-P002",
+  "exportedAt": "2025-03-18T09:15:44.112Z",
+  "appVersion": "1.1.1",
+  "studyMetadata": {
+    "studyTitle": "Sleep Health and Circadian Phenotyping in Working Adults",
+    "site": "Northumbria University – Circadia Lab",
+    "piCode": "ML-NTU-2025",
+    "studyPeriodStart": "2025-03-03",
+    "studyPeriodEnd": "2025-03-16",
+    "exportNote": "Full 14-day protocol. All entries complete. One-time questionnaires completed on Day 1."
+  },
+  "entries": [
+    {
+      "id": "2025-03-03-evening",
+      "type": "evening",
+      "date": "2025-03-03",
+      "completedAt": "2025-03-03T20:45:30.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Went for a 5k run after work."
+      }
+    },
+    {
+      "id": "2025-03-04-morning",
+      "type": "morning",
+      "date": "2025-03-04",
+      "completedAt": "2025-03-04T06:35:08.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 0 },
+        "mq2": { "hour": 22, "minute": 15 },
+        "mq3": { "hours": 0, "minutes": 10 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 6, "minute": 15 },
+        "mq7": { "hour": 6, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-04-evening",
+      "type": "evening",
+      "date": "2025-03-04",
+      "completedAt": "2025-03-04T21:00:17.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-05-morning",
+      "type": "morning",
+      "date": "2025-03-05",
+      "completedAt": "2025-03-05T06:40:22.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 0 },
+        "mq2": { "hour": 22, "minute": 10 },
+        "mq3": { "hours": 0, "minutes": 8 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 6, "minute": 15 },
+        "mq7": { "hour": 6, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-05-evening",
+      "type": "evening",
+      "date": "2025-03-05",
+      "completedAt": "2025-03-05T21:05:44.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 3,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-06-morning",
+      "type": "morning",
+      "date": "2025-03-06",
+      "completedAt": "2025-03-06T06:38:05.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 15 },
+        "mq2": { "hour": 22, "minute": 15 },
+        "mq3": { "hours": 0, "minutes": 12 },
+        "mq4": "yes",
+        "mq4b": 1,
+        "mq5": { "hours": 0, "minutes": 5 },
+        "mq6": { "hour": 6, "minute": 20 },
+        "mq7": { "hour": 6, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 4,
+        "mq12": 4,
+        "mq13": "Woke briefly around 3am but went straight back to sleep."
+      }
+    },
+    {
+      "id": "2025-03-06-evening",
+      "type": "evening",
+      "date": "2025-03-06",
+      "completedAt": "2025-03-06T21:10:11.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Rest day — skipped the gym."
+      }
+    },
+    {
+      "id": "2025-03-07-morning",
+      "type": "morning",
+      "date": "2025-03-07",
+      "completedAt": "2025-03-07T06:32:50.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 0 },
+        "mq2": { "hour": 22, "minute": 0 },
+        "mq3": { "hours": 0, "minutes": 10 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 6, "minute": 10 },
+        "mq7": { "hour": 6, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-07-evening",
+      "type": "evening",
+      "date": "2025-03-07",
+      "completedAt": "2025-03-07T21:05:00.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-08-morning",
+      "type": "morning",
+      "date": "2025-03-08",
+      "completedAt": "2025-03-08T07:15:20.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 30 },
+        "mq2": { "hour": 22, "minute": 45 },
+        "mq3": { "hours": 0, "minutes": 15 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 7, "minute": 0 },
+        "mq7": { "hour": 7, "minute": 15 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 2,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": "Weekend — let myself sleep in a little."
+      }
+    },
+    {
+      "id": "2025-03-08-evening",
+      "type": "evening",
+      "date": "2025-03-08",
+      "completedAt": "2025-03-08T21:15:33.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 1,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-09-morning",
+      "type": "morning",
+      "date": "2025-03-09",
+      "completedAt": "2025-03-09T07:20:05.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 30 },
+        "mq2": { "hour": 22, "minute": 45 },
+        "mq3": { "hours": 0, "minutes": 10 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 7, "minute": 5 },
+        "mq7": { "hour": 7, "minute": 20 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 1,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-09-evening",
+      "type": "evening",
+      "date": "2025-03-09",
+      "completedAt": "2025-03-09T21:00:48.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-10-morning",
+      "type": "morning",
+      "date": "2025-03-10",
+      "completedAt": "2025-03-10T06:33:14.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 0 },
+        "mq2": { "hour": 22, "minute": 10 },
+        "mq3": { "hours": 0, "minutes": 10 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 6, "minute": 20 },
+        "mq7": { "hour": 6, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-10-evening",
+      "type": "evening",
+      "date": "2025-03-10",
+      "completedAt": "2025-03-10T21:02:22.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-11-morning",
+      "type": "morning",
+      "date": "2025-03-11",
+      "completedAt": "2025-03-11T06:40:07.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 0 },
+        "mq2": { "hour": 22, "minute": 15 },
+        "mq3": { "hours": 0, "minutes": 12 },
+        "mq4": "yes",
+        "mq4b": 1,
+        "mq5": { "hours": 0, "minutes": 8 },
+        "mq6": { "hour": 6, "minute": 20 },
+        "mq7": { "hour": 6, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 4,
+        "mq12": 4,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-11-evening",
+      "type": "evening",
+      "date": "2025-03-11",
+      "completedAt": "2025-03-11T21:08:30.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 3,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-12-morning",
+      "type": "morning",
+      "date": "2025-03-12",
+      "completedAt": "2025-03-12T06:38:45.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 0 },
+        "mq2": { "hour": 22, "minute": 10 },
+        "mq3": { "hours": 0, "minutes": 10 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 6, "minute": 15 },
+        "mq7": { "hour": 6, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-12-evening",
+      "type": "evening",
+      "date": "2025-03-12",
+      "completedAt": "2025-03-12T21:00:55.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-13-morning",
+      "type": "morning",
+      "date": "2025-03-13",
+      "completedAt": "2025-03-13T06:35:12.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 0 },
+        "mq2": { "hour": 22, "minute": 0 },
+        "mq3": { "hours": 0, "minutes": 10 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 6, "minute": 15 },
+        "mq7": { "hour": 6, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-13-evening",
+      "type": "evening",
+      "date": "2025-03-13",
+      "completedAt": "2025-03-13T21:05:07.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-14-morning",
+      "type": "morning",
+      "date": "2025-03-14",
+      "completedAt": "2025-03-14T07:10:33.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 30 },
+        "mq2": { "hour": 22, "minute": 45 },
+        "mq3": { "hours": 0, "minutes": 12 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 7, "minute": 0 },
+        "mq7": { "hour": 7, "minute": 15 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 2,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": "Saturday. Slept in slightly."
+      }
+    },
+    {
+      "id": "2025-03-14-evening",
+      "type": "evening",
+      "date": "2025-03-14",
+      "completedAt": "2025-03-14T21:10:22.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 1,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-15-morning",
+      "type": "morning",
+      "date": "2025-03-15",
+      "completedAt": "2025-03-15T07:05:19.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 30 },
+        "mq2": { "hour": 22, "minute": 30 },
+        "mq3": { "hours": 0, "minutes": 10 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 7, "minute": 0 },
+        "mq7": { "hour": 7, "minute": 10 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-15-evening",
+      "type": "evening",
+      "date": "2025-03-15",
+      "completedAt": "2025-03-15T21:00:44.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-16-morning",
+      "type": "morning",
+      "date": "2025-03-16",
+      "completedAt": "2025-03-16T06:37:44.000Z",
+      "answers": {
+        "mq1": { "hour": 22, "minute": 0 },
+        "mq2": { "hour": 22, "minute": 0 },
+        "mq3": { "hours": 0, "minutes": 10 },
+        "mq4": "no",
+        "mq4b": null,
+        "mq5": { "hours": 0, "minutes": 0 },
+        "mq6": { "hour": 6, "minute": 15 },
+        "mq7": { "hour": 6, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 5,
+        "mq12": 5,
+        "mq13": "Last entry. Consistent week as usual."
+      }
+    }
+  ],
+  "questionnaires": [
+    {
+      "id": "ess",
+      "completedAt": "2025-03-03T17:30:05.000Z",
+      "answers": {
+        "ess1": 0,
+        "ess2": 0,
+        "ess3": 0,
+        "ess4": 1,
+        "ess5": 0,
+        "ess6": 0,
+        "ess7": 1,
+        "ess8": 0
+      },
+      "score": 2
+    },
+    {
+      "id": "isi",
+      "completedAt": "2025-03-03T17:36:18.000Z",
+      "answers": {
+        "isi1": 0,
+        "isi2": 0,
+        "isi3": 0,
+        "isi4": 0,
+        "isi5": 0,
+        "isi6": 0,
+        "isi7": 0
+      },
+      "score": 0
+    },
+    {
+      "id": "dbas16",
+      "completedAt": "2025-03-03T17:44:30.000Z",
+      "answers": {
+        "dbas1": 3,
+        "dbas2": 2,
+        "dbas3": 1,
+        "dbas4": 1,
+        "dbas5": 2,
+        "dbas6": 1,
+        "dbas7": 2,
+        "dbas8": 1,
+        "dbas9": 2,
+        "dbas10": 2,
+        "dbas11": 1,
+        "dbas12": 2,
+        "dbas13": 1,
+        "dbas14": 1,
+        "dbas15": 1,
+        "dbas16": 1
+      },
+      "score": 1.6
+    },
+    {
+      "id": "meq",
+      "completedAt": "2025-03-03T17:52:10.000Z",
+      "answers": {
+        "meq1": 5,
+        "meq2": 5,
+        "meq3": 4,
+        "meq4": 4,
+        "meq5": 4,
+        "meq6": 4,
+        "meq7": 4,
+        "meq8": 4,
+        "meq9": 4,
+        "meq10": 5,
+        "meq11": 6,
+        "meq12": 5,
+        "meq13": 4,
+        "meq14": 4,
+        "meq15": 4,
+        "meq16": 4,
+        "meq17": 5,
+        "meq18": 4,
+        "meq19": 6
+      },
+      "score": 85
+    },
+    {
+      "id": "psqi",
+      "completedAt": "2025-03-03T18:02:44.000Z",
+      "answers": {
+        "psqi1": { "hour": 22, "minute": 0 },
+        "psqi2": 10,
+        "psqi3": { "hour": 6, "minute": 30 },
+        "psqi4": 8,
+        "psqi5a": 0,
+        "psqi5b": 1,
+        "psqi5c": 0,
+        "psqi5d": 0,
+        "psqi5e": 0,
+        "psqi5f": 0,
+        "psqi5g": 0,
+        "psqi5h": 0,
+        "psqi5i": 0,
+        "psqi6": 0,
+        "psqi7": 0,
+        "psqi8": 0,
+        "psqi9": 0
+      },
+      "score": 1
+    },
+    {
+      "id": "rusated",
+      "completedAt": "2025-03-03T18:10:05.000Z",
+      "answers": {
+        "rus1": 4,
+        "rus2": 4,
+        "rus3": 4,
+        "rus4": 4,
+        "rus5": 4,
+        "rus6": 4
+      },
+      "score": 24
+    },
+    {
+      "id": "stopbang",
+      "completedAt": "2025-03-03T18:14:30.000Z",
+      "answers": {
+        "sb_s": "no",
+        "sb_t": "no",
+        "sb_o": "no",
+        "sb_p": "no",
+        "sb_b": "no",
+        "sb_a": "no",
+        "sb_n": "no",
+        "sb_g": "yes"
+      },
+      "score": 1
+    },
+    {
+      "id": "mctq",
+      "completedAt": "2025-03-03T18:18:55.000Z",
+      "answers": {
+        "mctq_wd": 5,
+        "mctq_bt_w": { "hour": 22, "minute": 0 },
+        "mctq_sl_w": 10,
+        "mctq_wt_w": { "hour": 6, "minute": 30 },
+        "mctq_bt_f": { "hour": 22, "minute": 30 },
+        "mctq_sl_f": 10,
+        "mctq_wt_f": { "hour": 7, "minute": 15 }
+      },
+      "score": { "msf_sc": 1.33, "sjl": 0.33 }
+    }
+  ]
+}

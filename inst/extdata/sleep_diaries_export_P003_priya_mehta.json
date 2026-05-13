@@ -1,0 +1,669 @@
+{
+  "participant": "Priya Mehta",
+  "researchCode": "CIRCADIA-2025-P003",
+  "exportedAt": "2025-03-18T10:02:33.891Z",
+  "appVersion": "1.1.1",
+  "studyMetadata": {
+    "studyTitle": "Sleep Health and Circadian Phenotyping in Working Adults",
+    "site": "Northumbria University – Circadia Lab",
+    "piCode": "ML-NTU-2025",
+    "studyPeriodStart": "2025-03-03",
+    "studyPeriodEnd": "2025-03-16",
+    "exportNote": "Full 14-day protocol. Night-shift worker (4 nights on / 4 nights off rotation). Sleep timing is highly variable. One-time questionnaires completed on Day 1 (day-off)."
+  },
+  "entries": [
+    {
+      "id": "2025-03-03-evening",
+      "type": "evening",
+      "date": "2025-03-03",
+      "completedAt": "2025-03-03T21:10:05.000Z",
+      "answers": {
+        "eq1": "yes",
+        "eq1b": { "hours": 1, "minutes": 30 },
+        "eq2": 4,
+        "eq3": "no",
+        "eq4": "yes",
+        "eq4b": [{ "id": 1741042800001, "name": "Zopiclone", "dose": "7.5", "times": ["09:00"] }],
+        "eq5": "Day off after 4-night block. Exhausted."
+      }
+    },
+    {
+      "id": "2025-03-04-morning",
+      "type": "morning",
+      "date": "2025-03-04",
+      "completedAt": "2025-03-04T14:05:12.000Z",
+      "answers": {
+        "mq1": { "hour": 9, "minute": 30 },
+        "mq2": { "hour": 10, "minute": 0 },
+        "mq3": { "hours": 0, "minutes": 20 },
+        "mq4": "yes",
+        "mq4b": 3,
+        "mq5": { "hours": 0, "minutes": 45 },
+        "mq6": { "hour": 13, "minute": 30 },
+        "mq7": { "hour": 14, "minute": 0 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "yes",
+        "mq10b": [{ "id": 1741042800001, "name": "Zopiclone", "dose": "7.5", "times": ["09:00"] }],
+        "mq11": 2,
+        "mq12": 2,
+        "mq13": "Recovery sleep after nights. Never feels restorative during the day."
+      }
+    },
+    {
+      "id": "2025-03-04-evening",
+      "type": "evening",
+      "date": "2025-03-04",
+      "completedAt": "2025-03-04T21:30:47.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 3,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Trying to flip back to normal sleep tonight."
+      }
+    },
+    {
+      "id": "2025-03-05-morning",
+      "type": "morning",
+      "date": "2025-03-05",
+      "completedAt": "2025-03-05T09:45:33.000Z",
+      "answers": {
+        "mq1": { "hour": 23, "minute": 0 },
+        "mq2": { "hour": 23, "minute": 15 },
+        "mq3": { "hours": 0, "minutes": 35 },
+        "mq4": "yes",
+        "mq4b": 3,
+        "mq5": { "hours": 0, "minutes": 40 },
+        "mq6": { "hour": 8, "minute": 30 },
+        "mq7": { "hour": 9, "minute": 0 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 2,
+        "mq12": 2,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-05-evening",
+      "type": "evening",
+      "date": "2025-03-05",
+      "completedAt": "2025-03-05T22:05:19.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 3,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-06-morning",
+      "type": "morning",
+      "date": "2025-03-06",
+      "completedAt": "2025-03-06T09:15:04.000Z",
+      "answers": {
+        "mq1": { "hour": 23, "minute": 15 },
+        "mq2": { "hour": 23, "minute": 30 },
+        "mq3": { "hours": 0, "minutes": 25 },
+        "mq4": "yes",
+        "mq4b": 2,
+        "mq5": { "hours": 0, "minutes": 30 },
+        "mq6": { "hour": 8, "minute": 0 },
+        "mq7": { "hour": 8, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 3,
+        "mq12": 2,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-06-evening",
+      "type": "evening",
+      "date": "2025-03-06",
+      "completedAt": "2025-03-06T21:55:30.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Night shifts start again tomorrow."
+      }
+    },
+    {
+      "id": "2025-03-07-morning",
+      "type": "morning",
+      "date": "2025-03-07",
+      "completedAt": "2025-03-07T23:45:18.000Z",
+      "answers": {
+        "mq1": { "hour": 14, "minute": 0 },
+        "mq2": { "hour": 14, "minute": 30 },
+        "mq3": { "hours": 0, "minutes": 40 },
+        "mq4": "yes",
+        "mq4b": 2,
+        "mq5": { "hours": 0, "minutes": 30 },
+        "mq6": { "hour": 21, "minute": 0 },
+        "mq7": { "hour": 22, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 2,
+        "mq12": 2,
+        "mq13": "Pre-shift sleep. Always hard to fall asleep in the afternoon."
+      }
+    },
+    {
+      "id": "2025-03-07-evening",
+      "type": "evening",
+      "date": "2025-03-07",
+      "completedAt": "2025-03-07T22:50:05.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 5,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Night 1 of 4. Already caffeinating."
+      }
+    },
+    {
+      "id": "2025-03-08-morning",
+      "type": "morning",
+      "date": "2025-03-08",
+      "completedAt": "2025-03-08T08:55:44.000Z",
+      "answers": {
+        "mq1": { "hour": 8, "minute": 30 },
+        "mq2": { "hour": 8, "minute": 45 },
+        "mq3": { "hours": 0, "minutes": 15 },
+        "mq4": "yes",
+        "mq4b": 4,
+        "mq5": { "hours": 1, "minutes": 0 },
+        "mq6": { "hour": 13, "minute": 15 },
+        "mq7": { "hour": 14, "minute": 0 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "yes",
+        "mq10b": [{ "id": 1741042800001, "name": "Zopiclone", "dose": "7.5", "times": ["08:30"] }],
+        "mq11": 2,
+        "mq12": 1,
+        "mq13": "Post-night-shift sleep. Light kept waking me up. Blackout blinds not enough."
+      }
+    },
+    {
+      "id": "2025-03-08-evening",
+      "type": "evening",
+      "date": "2025-03-08",
+      "completedAt": "2025-03-08T22:45:11.000Z",
+      "answers": {
+        "eq1": "yes",
+        "eq1b": { "hours": 0, "minutes": 45 },
+        "eq2": 4,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Napped early evening to prepare for shift 2."
+      }
+    },
+    {
+      "id": "2025-03-09-morning",
+      "type": "morning",
+      "date": "2025-03-09",
+      "completedAt": "2025-03-09T09:30:22.000Z",
+      "answers": {
+        "mq1": { "hour": 9, "minute": 0 },
+        "mq2": { "hour": 9, "minute": 15 },
+        "mq3": { "hours": 0, "minutes": 20 },
+        "mq4": "yes",
+        "mq4b": 3,
+        "mq5": { "hours": 0, "minutes": 50 },
+        "mq6": { "hour": 13, "minute": 45 },
+        "mq7": { "hour": 14, "minute": 15 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "yes",
+        "mq10b": [{ "id": 1741042800001, "name": "Zopiclone", "dose": "7.5", "times": ["09:00"] }],
+        "mq11": 1,
+        "mq12": 1,
+        "mq13": "Terrible. Neighbours were noisy."
+      }
+    },
+    {
+      "id": "2025-03-09-evening",
+      "type": "evening",
+      "date": "2025-03-09",
+      "completedAt": "2025-03-09T22:40:00.000Z",
+      "answers": {
+        "eq1": "yes",
+        "eq1b": { "hours": 1, "minutes": 0 },
+        "eq2": 5,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Night 3. Getting harder to function."
+      }
+    },
+    {
+      "id": "2025-03-10-morning",
+      "type": "morning",
+      "date": "2025-03-10",
+      "completedAt": "2025-03-10T08:40:14.000Z",
+      "answers": {
+        "mq1": { "hour": 8, "minute": 15 },
+        "mq2": { "hour": 8, "minute": 30 },
+        "mq3": { "hours": 0, "minutes": 25 },
+        "mq4": "yes",
+        "mq4b": 3,
+        "mq5": { "hours": 0, "minutes": 45 },
+        "mq6": { "hour": 13, "minute": 0 },
+        "mq7": { "hour": 14, "minute": 0 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "yes",
+        "mq10b": [{ "id": 1741042800001, "name": "Zopiclone", "dose": "7.5", "times": ["08:15"] }],
+        "mq11": 2,
+        "mq12": 1,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-10-evening",
+      "type": "evening",
+      "date": "2025-03-10",
+      "completedAt": "2025-03-10T22:55:33.000Z",
+      "answers": {
+        "eq1": "yes",
+        "eq1b": { "hours": 0, "minutes": 30 },
+        "eq2": 4,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Last shift tonight. Almost done."
+      }
+    },
+    {
+      "id": "2025-03-11-morning",
+      "type": "morning",
+      "date": "2025-03-11",
+      "completedAt": "2025-03-11T13:10:07.000Z",
+      "answers": {
+        "mq1": { "hour": 9, "minute": 0 },
+        "mq2": { "hour": 9, "minute": 15 },
+        "mq3": { "hours": 0, "minutes": 15 },
+        "mq4": "yes",
+        "mq4b": 2,
+        "mq5": { "hours": 0, "minutes": 30 },
+        "mq6": { "hour": 12, "minute": 30 },
+        "mq7": { "hour": 13, "minute": 0 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "yes",
+        "mq10b": [{ "id": 1741042800001, "name": "Zopiclone", "dose": "7.5", "times": ["09:00"] }],
+        "mq11": 2,
+        "mq12": 2,
+        "mq13": "Final night shift done. Recovery starts now."
+      }
+    },
+    {
+      "id": "2025-03-11-evening",
+      "type": "evening",
+      "date": "2025-03-11",
+      "completedAt": "2025-03-11T21:30:18.000Z",
+      "answers": {
+        "eq1": "yes",
+        "eq1b": { "hours": 2, "minutes": 0 },
+        "eq2": 2,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Took a long afternoon nap. Trying to flip back to daytime."
+      }
+    },
+    {
+      "id": "2025-03-12-morning",
+      "type": "morning",
+      "date": "2025-03-12",
+      "completedAt": "2025-03-12T09:50:42.000Z",
+      "answers": {
+        "mq1": { "hour": 23, "minute": 30 },
+        "mq2": { "hour": 0, "minute": 0 },
+        "mq3": { "hours": 0, "minutes": 30 },
+        "mq4": "yes",
+        "mq4b": 2,
+        "mq5": { "hours": 0, "minutes": 30 },
+        "mq6": { "hour": 8, "minute": 30 },
+        "mq7": { "hour": 9, "minute": 0 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 3,
+        "mq12": 3,
+        "mq13": "Slept through the night for the first time this week. Some relief."
+      }
+    },
+    {
+      "id": "2025-03-12-evening",
+      "type": "evening",
+      "date": "2025-03-12",
+      "completedAt": "2025-03-12T22:00:27.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-13-morning",
+      "type": "morning",
+      "date": "2025-03-13",
+      "completedAt": "2025-03-13T10:15:30.000Z",
+      "answers": {
+        "mq1": { "hour": 23, "minute": 30 },
+        "mq2": { "hour": 23, "minute": 45 },
+        "mq3": { "hours": 0, "minutes": 25 },
+        "mq4": "yes",
+        "mq4b": 2,
+        "mq5": { "hours": 0, "minutes": 20 },
+        "mq6": { "hour": 9, "minute": 0 },
+        "mq7": { "hour": 9, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 1,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 3,
+        "mq12": 3,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-13-evening",
+      "type": "evening",
+      "date": "2025-03-13",
+      "completedAt": "2025-03-13T21:45:09.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-14-morning",
+      "type": "morning",
+      "date": "2025-03-14",
+      "completedAt": "2025-03-14T10:30:19.000Z",
+      "answers": {
+        "mq1": { "hour": 23, "minute": 45 },
+        "mq2": { "hour": 0, "minute": 0 },
+        "mq3": { "hours": 0, "minutes": 30 },
+        "mq4": "yes",
+        "mq4b": 1,
+        "mq5": { "hours": 0, "minutes": 15 },
+        "mq6": { "hour": 9, "minute": 15 },
+        "mq7": { "hour": 9, "minute": 45 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 2,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 3,
+        "mq12": 3,
+        "mq13": "Off days. Slowly getting back to normal."
+      }
+    },
+    {
+      "id": "2025-03-14-evening",
+      "type": "evening",
+      "date": "2025-03-14",
+      "completedAt": "2025-03-14T22:10:04.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 2,
+        "eq3": "yes",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": null
+      }
+    },
+    {
+      "id": "2025-03-15-morning",
+      "type": "morning",
+      "date": "2025-03-15",
+      "completedAt": "2025-03-15T10:05:44.000Z",
+      "answers": {
+        "mq1": { "hour": 0, "minute": 0 },
+        "mq2": { "hour": 0, "minute": 15 },
+        "mq3": { "hours": 0, "minutes": 25 },
+        "mq4": "yes",
+        "mq4b": 2,
+        "mq5": { "hours": 0, "minutes": 20 },
+        "mq6": { "hour": 8, "minute": 45 },
+        "mq7": { "hour": 9, "minute": 30 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 1,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 3,
+        "mq12": 3,
+        "mq13": null
+      }
+    },
+    {
+      "id": "2025-03-15-evening",
+      "type": "evening",
+      "date": "2025-03-15",
+      "completedAt": "2025-03-15T22:00:33.000Z",
+      "answers": {
+        "eq1": "no",
+        "eq1b": null,
+        "eq2": 3,
+        "eq3": "no",
+        "eq4": "no",
+        "eq4b": [],
+        "eq5": "Night shifts start again in 3 days. Dreading it."
+      }
+    },
+    {
+      "id": "2025-03-16-morning",
+      "type": "morning",
+      "date": "2025-03-16",
+      "completedAt": "2025-03-16T10:10:11.000Z",
+      "answers": {
+        "mq1": { "hour": 0, "minute": 15 },
+        "mq2": { "hour": 0, "minute": 30 },
+        "mq3": { "hours": 0, "minutes": 20 },
+        "mq4": "yes",
+        "mq4b": 2,
+        "mq5": { "hours": 0, "minutes": 25 },
+        "mq6": { "hour": 8, "minute": 30 },
+        "mq7": { "hour": 9, "minute": 0 },
+        "mq8": "no",
+        "mq8b": null,
+        "mq9": 0,
+        "mq10": "no",
+        "mq10b": [],
+        "mq11": 3,
+        "mq12": 3,
+        "mq13": "Last entry. Still not back to feeling fully rested."
+      }
+    }
+  ],
+  "questionnaires": [
+    {
+      "id": "ess",
+      "completedAt": "2025-03-03T18:00:10.000Z",
+      "answers": {
+        "ess1": 2,
+        "ess2": 3,
+        "ess3": 1,
+        "ess4": 3,
+        "ess5": 3,
+        "ess6": 1,
+        "ess7": 2,
+        "ess8": 2
+      },
+      "score": 17
+    },
+    {
+      "id": "isi",
+      "completedAt": "2025-03-03T18:08:30.000Z",
+      "answers": {
+        "isi1": 2,
+        "isi2": 3,
+        "isi3": 1,
+        "isi4": 3,
+        "isi5": 2,
+        "isi6": 2,
+        "isi7": 2
+      },
+      "score": 15
+    },
+    {
+      "id": "dbas16",
+      "completedAt": "2025-03-03T18:20:44.000Z",
+      "answers": {
+        "dbas1": 6,
+        "dbas2": 5,
+        "dbas3": 6,
+        "dbas4": 5,
+        "dbas5": 7,
+        "dbas6": 6,
+        "dbas7": 5,
+        "dbas8": 4,
+        "dbas9": 6,
+        "dbas10": 8,
+        "dbas11": 7,
+        "dbas12": 6,
+        "dbas13": 4,
+        "dbas14": 7,
+        "dbas15": 5,
+        "dbas16": 5
+      },
+      "score": 5.8
+    },
+    {
+      "id": "meq",
+      "completedAt": "2025-03-03T18:32:05.000Z",
+      "answers": {
+        "meq1": 3,
+        "meq2": 3,
+        "meq3": 2,
+        "meq4": 2,
+        "meq5": 2,
+        "meq6": 2,
+        "meq7": 2,
+        "meq8": 2,
+        "meq9": 2,
+        "meq10": 3,
+        "meq11": 4,
+        "meq12": 3,
+        "meq13": 2,
+        "meq14": 3,
+        "meq15": 3,
+        "meq16": 3,
+        "meq17": 3,
+        "meq18": 3,
+        "meq19": 4
+      },
+      "score": 51
+    },
+    {
+      "id": "psqi",
+      "completedAt": "2025-03-03T18:45:14.000Z",
+      "answers": {
+        "psqi1": { "hour": 0, "minute": 0 },
+        "psqi2": 30,
+        "psqi3": { "hour": 9, "minute": 0 },
+        "psqi4": 5,
+        "psqi5a": 2,
+        "psqi5b": 3,
+        "psqi5c": 1,
+        "psqi5d": 2,
+        "psqi5e": 2,
+        "psqi5f": 0,
+        "psqi5g": 1,
+        "psqi5h": 1,
+        "psqi5i": 0,
+        "psqi6": 3,
+        "psqi7": 2,
+        "psqi8": 2,
+        "psqi9": 2
+      },
+      "score": 13
+    },
+    {
+      "id": "rusated",
+      "completedAt": "2025-03-03T18:55:30.000Z",
+      "answers": {
+        "rus1": 1,
+        "rus2": 2,
+        "rus3": 1,
+        "rus4": 2,
+        "rus5": 1,
+        "rus6": 1
+      },
+      "score": 8
+    },
+    {
+      "id": "stopbang",
+      "completedAt": "2025-03-03T19:00:45.000Z",
+      "answers": {
+        "sb_s": "yes",
+        "sb_t": "yes",
+        "sb_o": "no",
+        "sb_p": "no",
+        "sb_b": "no",
+        "sb_a": "no",
+        "sb_n": "no",
+        "sb_g": "no"
+      },
+      "score": 2
+    },
+    {
+      "id": "mctq",
+      "completedAt": "2025-03-03T19:05:22.000Z",
+      "answers": {
+        "mctq_wd": 4,
+        "mctq_bt_w": { "hour": 9, "minute": 0 },
+        "mctq_sl_w": 25,
+        "mctq_wt_w": { "hour": 14, "minute": 0 },
+        "mctq_bt_f": { "hour": 0, "minute": 0 },
+        "mctq_sl_f": 25,
+        "mctq_wt_f": { "hour": 9, "minute": 30 }
+      },
+      "score": { "msf_sc": 2.67, "sjl": 4.92 }
+    }
+  ]
+}
