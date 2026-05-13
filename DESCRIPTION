@@ -38,5 +38,5 @@ Suggests:
     rmarkdown,
     testthat (>= 3.0.0)
 Config/testthat/edition: 3
-URL: https://github.com/circadia-bio/slumbR
+URL: https://github.com/circadia-bio/slumbR, https://circadia-bio.github.io/slumbR/
 BugReports: https://github.com/circadia-bio/slumbR/issues
