@@ -43,6 +43,10 @@ slumbR/
 │   ├── import.R              # read_export(), read_study(), compute_sleep_vars()
 │   ├── tidy.R                # diary_long(), diary_wide(), study_summary()
 │   └── questionnaires.R      # score_questionnaire(), score_all_questionnaires()
+├── inst/extdata/             # bundled example exports (3 simulated participants)
+├── man/                      # roxygen2-generated documentation
+├── vignettes/
+│   └── getting-started.Rmd  # end-to-end worked example
 ├── tests/testthat/
 │   ├── test-questionnaires.R
 │   └── test-import.R
@@ -60,7 +64,7 @@ slumbR/
 ### Prerequisites
 
 - R ≥ 4.1
-- The following packages (installed automatically): `jsonlite`, `dplyr`, `tidyr`, `lubridate`, `purrr`, `rlang`, `cli`
+- The following packages (installed automatically): `jsonlite`, `dplyr`, `lubridate`, `purrr`, `rlang`, `cli`
 
 ### Installation
 
@@ -102,9 +106,22 @@ score_questionnaire("ess", answers = list(
 #> [1] "Excessive"
 ```
 
+### Try it with the bundled example data
+
+> [!NOTE]
+> The bundled dataset is entirely **simulated**. The three participants (Sarah Chen, James Okonkwo, Priya Mehta) and all their diary entries and questionnaire responses are artificially generated for demonstration purposes. They do not represent real people or real study data.
+
+```r
+extdata <- system.file("extdata", package = "slumbR")
+study   <- read_study(extdata)
+study_summary(study)
+```
+
+See `vignette("getting-started", package = "slumbR")` for a full worked example.
+
 ---
 
-## 📦 Computed sleep variables
+## 🛏️ Computed sleep variables
 
 Morning diary entries are automatically enriched with the following derived variables when using `read_export()` or `read_study()`:
 
@@ -143,7 +160,6 @@ Morning diary entries are automatically enriched with the following derived vari
 |---|---|---|
 | jsonlite | ≥ 1.8.0 | JSON parsing |
 | dplyr | ≥ 1.1.0 | Data manipulation |
-| tidyr | ≥ 1.3.0 | Reshaping (long ↔ wide) |
 | lubridate | ≥ 1.9.0 | Date/time handling |
 | purrr | ≥ 1.0.0 | Functional iteration |
 | rlang | ≥ 1.1.0 | Error/warning infrastructure |
