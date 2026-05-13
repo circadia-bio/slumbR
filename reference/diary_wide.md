@@ -22,8 +22,8 @@ A data frame with one row per participant x date.
 
 ## See also
 
-[`diary_long()`](https://circadia-bio.github.io/slumbR/reference/diary_long.md),
-[`read_study()`](https://circadia-bio.github.io/slumbR/reference/read_study.md)
+[`diary_long()`](https://slumbr.circadia-lab.uk/reference/diary_long.md),
+[`read_study()`](https://slumbr.circadia-lab.uk/reference/read_study.md)
 
 ## Examples
 

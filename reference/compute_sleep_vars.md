@@ -1,7 +1,7 @@
 # Compute derived sleep variables from raw morning diary answers
 
 Given a morning-entry data frame row (as produced internally by
-[`read_export()`](https://circadia-bio.github.io/slumbR/reference/read_export.md)),
+[`read_export()`](https://slumbr.circadia-lab.uk/reference/read_export.md)),
 returns additional computed columns:
 
 ## Usage
@@ -15,7 +15,7 @@ compute_sleep_vars(df)
 - df:
 
   A data frame with morning-entry columns (output of
-  [`diary_long()`](https://circadia-bio.github.io/slumbR/reference/diary_long.md)).
+  [`diary_long()`](https://slumbr.circadia-lab.uk/reference/diary_long.md)).
 
 ## Value
 

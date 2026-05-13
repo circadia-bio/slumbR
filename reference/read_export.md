@@ -26,7 +26,7 @@ read_export(path, participant_id = NULL, compute_vars = TRUE)
 
   Logical. If `TRUE` (default), adds derived sleep variables (TIB, TST,
   SE, flags) to morning entries via
-  [`compute_sleep_vars()`](https://circadia-bio.github.io/slumbR/reference/compute_sleep_vars.md).
+  [`compute_sleep_vars()`](https://slumbr.circadia-lab.uk/reference/compute_sleep_vars.md).
 
 ## Value
 
@@ -64,9 +64,9 @@ A named list with class `"slumbr_export"`:
 
 ## See also
 
-[`read_study()`](https://circadia-bio.github.io/slumbR/reference/read_study.md),
-[`diary_long()`](https://circadia-bio.github.io/slumbR/reference/diary_long.md),
-[`diary_wide()`](https://circadia-bio.github.io/slumbR/reference/diary_wide.md)
+[`read_study()`](https://slumbr.circadia-lab.uk/reference/read_study.md),
+[`diary_long()`](https://slumbr.circadia-lab.uk/reference/diary_long.md),
+[`diary_wide()`](https://slumbr.circadia-lab.uk/reference/diary_wide.md)
 
 ## Examples
 

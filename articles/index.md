@@ -3,4 +3,4 @@
 ### Getting started
 
 - [Getting started with
-  slumbR](https://circadia-bio.github.io/slumbR/articles/getting-started.md):
+  slumbR](https://slumbr.circadia-lab.uk/articles/getting-started.md):

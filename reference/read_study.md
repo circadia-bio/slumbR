@@ -35,7 +35,7 @@ read_study(
 - compute_vars:
 
   Logical. Passed to
-  [`read_export()`](https://circadia-bio.github.io/slumbR/reference/read_export.md).
+  [`read_export()`](https://slumbr.circadia-lab.uk/reference/read_export.md).
 
 - verbose:
 
@@ -69,9 +69,9 @@ A named list with class `"slumbr_study"`:
 
 ## See also
 
-[`read_export()`](https://circadia-bio.github.io/slumbR/reference/read_export.md),
-[`diary_long()`](https://circadia-bio.github.io/slumbR/reference/diary_long.md),
-[`diary_wide()`](https://circadia-bio.github.io/slumbR/reference/diary_wide.md)
+[`read_export()`](https://slumbr.circadia-lab.uk/reference/read_export.md),
+[`diary_long()`](https://slumbr.circadia-lab.uk/reference/diary_long.md),
+[`diary_wide()`](https://slumbr.circadia-lab.uk/reference/diary_wide.md)
 
 ## Examples
 

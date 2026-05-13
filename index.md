@@ -3,7 +3,7 @@
 **Sleep Diaries helper package for R — import, compute, and score.**
 
 [![License:
-MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://circadia-bio.github.io/slumbR/LICENSE)
+MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://slumbr.circadia-lab.uk/LICENSE)
 [![R](https://img.shields.io/badge/R-%3E%3D4.1-276DC3)](https://www.r-project.org/)
 [![R CMD
 CHECK](https://github.com/circadia-bio/slumbR/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/circadia-bio/slumbR/actions/workflows/R-CMD-check.yaml)
@@ -39,30 +39,30 @@ downstream statistics or visualisation.
 ## ✨ Features
 
 - 📥
-  **[`read_export()`](https://circadia-bio.github.io/slumbR/reference/read_export.md)**
+  **[`read_export()`](https://slumbr.circadia-lab.uk/reference/read_export.md)**
   — parse a single participant’s JSON export into a structured
   `slumbr_export` object
 - 📂
-  **[`read_study()`](https://circadia-bio.github.io/slumbR/reference/read_study.md)**
+  **[`read_study()`](https://slumbr.circadia-lab.uk/reference/read_study.md)**
   — batch-read a whole directory of exports into a `slumbr_study` with
   long, wide, and scores frames
 - 📐
-  **[`compute_sleep_vars()`](https://circadia-bio.github.io/slumbR/reference/compute_sleep_vars.md)**
+  **[`compute_sleep_vars()`](https://slumbr.circadia-lab.uk/reference/compute_sleep_vars.md)**
   — derive TIB, TST, SE, and clinical flags from raw morning diary
   answers
 - 🔀
-  **[`diary_wide()`](https://circadia-bio.github.io/slumbR/reference/diary_wide.md)**
+  **[`diary_wide()`](https://slumbr.circadia-lab.uk/reference/diary_wide.md)**
   — pivot to one row per participant × night with `m_` / `e_` prefixed
   columns
 - 📊
-  **[`study_summary()`](https://circadia-bio.github.io/slumbR/reference/study_summary.md)**
+  **[`study_summary()`](https://slumbr.circadia-lab.uk/reference/study_summary.md)**
   — participant-level summary table (mean TST, SE, SOL, quality, etc.)
 - 🧮
-  **[`score_questionnaire()`](https://circadia-bio.github.io/slumbR/reference/score_questionnaire.md)**
+  **[`score_questionnaire()`](https://slumbr.circadia-lab.uk/reference/score_questionnaire.md)**
   — re-score any of the 8 instruments from raw answers; algorithms match
   the app exactly
 - ✅
-  **[`score_all_questionnaires()`](https://circadia-bio.github.io/slumbR/reference/score_all_questionnaires.md)**
+  **[`score_all_questionnaires()`](https://slumbr.circadia-lab.uk/reference/score_all_questionnaires.md)**
   — re-score an entire questionnaire data frame in one call
 
 ------------------------------------------------------------------------
@@ -156,7 +156,7 @@ study_summary(study)
 ```
 
 See
-[`vignette("getting-started", package = "slumbR")`](https://circadia-bio.github.io/slumbR/articles/getting-started.md)
+[`vignette("getting-started", package = "slumbR")`](https://slumbr.circadia-lab.uk/articles/getting-started.md)
 for a full worked example.
 
 ------------------------------------------------------------------------
@@ -165,9 +165,9 @@ for a full worked example.
 
 Morning diary entries are automatically enriched with the following
 derived variables when using
-[`read_export()`](https://circadia-bio.github.io/slumbR/reference/read_export.md)
+[`read_export()`](https://slumbr.circadia-lab.uk/reference/read_export.md)
 or
-[`read_study()`](https://circadia-bio.github.io/slumbR/reference/read_study.md):
+[`read_study()`](https://slumbr.circadia-lab.uk/reference/read_study.md):
 
 | Variable | Definition | Reference threshold |
 |----|----|----|
@@ -236,6 +236,6 @@ or
 ## 📄 Licence
 
 Released under the [MIT
-License](https://circadia-bio.github.io/slumbR/LICENSE).
+License](https://slumbr.circadia-lab.uk/LICENSE).
 
 Copyright © Lucas França, Mario Leocadio-Miguel, 2025

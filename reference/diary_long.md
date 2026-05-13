@@ -34,5 +34,5 @@ A data frame with one row per diary entry.
 The long-format frame has **one row per diary entry** (morning or
 evening). Morning rows carry sleep timing and quality variables; evening
 rows carry daytime behaviour variables. Most analyses will want
-[`diary_wide()`](https://circadia-bio.github.io/slumbR/reference/diary_wide.md)
+[`diary_wide()`](https://slumbr.circadia-lab.uk/reference/diary_wide.md)
 to merge them into one row per night.

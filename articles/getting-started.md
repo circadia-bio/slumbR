@@ -36,7 +36,7 @@ study
 #> ℹ slumbr_study: 3 participants | 78 total entries
 ```
 
-[`read_study()`](https://circadia-bio.github.io/slumbR/reference/read_study.md)
+[`read_study()`](https://slumbr.circadia-lab.uk/reference/read_study.md)
 returns a `slumbr_study` object with three slots:
 
 - `$diary` — long-format data frame, one row per diary entry
@@ -105,7 +105,7 @@ head(study$wide[, c("participant_id", "date",
 
 ## Participant-level summary
 
-[`study_summary()`](https://circadia-bio.github.io/slumbR/reference/study_summary.md)
+[`study_summary()`](https://slumbr.circadia-lab.uk/reference/study_summary.md)
 computes per-participant means across the full protocol:
 
 ``` r
@@ -233,7 +233,7 @@ cat("Mean SE: ", round(mean(morning$se_pct,  na.rm = TRUE), 1), "%\n")
 
 ## Re-scoring all questionnaires
 
-[`score_all_questionnaires()`](https://circadia-bio.github.io/slumbR/reference/score_all_questionnaires.md)
+[`score_all_questionnaires()`](https://slumbr.circadia-lab.uk/reference/score_all_questionnaires.md)
 re-scores a questionnaire data frame and appends `score_r` and `label_r`
 columns:
 
@@ -298,17 +298,17 @@ rescored[, c("participant_id", "questionnaire", "score", "score_r", "label_r")]
 ## Next steps
 
 - Use
-  [`diary_wide()`](https://circadia-bio.github.io/slumbR/reference/diary_wide.md)
+  [`diary_wide()`](https://slumbr.circadia-lab.uk/reference/diary_wide.md)
   directly on any long-format data frame if you’ve done your own
   pre-processing
 - Use
-  [`compute_sleep_vars()`](https://circadia-bio.github.io/slumbR/reference/compute_sleep_vars.md)
+  [`compute_sleep_vars()`](https://slumbr.circadia-lab.uk/reference/compute_sleep_vars.md)
   to recompute derived variables after modifying raw timing fields
 - See
-  [`?score_questionnaire`](https://circadia-bio.github.io/slumbR/reference/score_questionnaire.md)
+  [`?score_questionnaire`](https://slumbr.circadia-lab.uk/reference/score_questionnaire.md)
   for full documentation of each instrument’s scoring algorithm
 - All eight instruments are listed by
-  [`available_instruments()`](https://circadia-bio.github.io/slumbR/reference/available_instruments.md)
+  [`available_instruments()`](https://slumbr.circadia-lab.uk/reference/available_instruments.md)
 
 ``` r
 

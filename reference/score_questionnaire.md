@@ -47,7 +47,7 @@ top-level fields.
 
 ## See also
 
-[`score_all_questionnaires()`](https://circadia-bio.github.io/slumbR/reference/score_all_questionnaires.md)
+[`score_all_questionnaires()`](https://slumbr.circadia-lab.uk/reference/score_all_questionnaires.md)
 
 ## Examples
 
