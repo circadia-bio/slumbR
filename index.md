@@ -1,7 +1,5 @@
 # slumbR
 
-![](reference/figures/logo.svg)
-
 **Sleep Diaries helper package for R — import, compute, and score.**
 
 [![License:
