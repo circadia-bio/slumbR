@@ -2,6 +2,7 @@ url: https://slumbr.circadia-lab.uk
 
 template:
   bootstrap: 5
+  logo: man/figures/logo.svg
   bslib:
     # ── Colours ──────────────────────────────────────────────────────────────
     bg:              "#EEF5FF"          # app background
@@ -53,6 +54,9 @@ template:
           border-bottom: 2px solid #E07A20;
         }
         .navbar small.nav-text { color: #E07A20 !important; }
+
+        /* ── Navbar logo size ── */
+        .navbar-brand img { height: 40px; width: auto; }
 
         /* ── Sidebar TOC links — force navy, never light ── */
         .sidebar .nav-link,

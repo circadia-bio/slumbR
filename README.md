@@ -1,4 +1,6 @@
-# 🛌 slumbR
+<img src="man/figures/logo.svg" align="right" height="140"/>
+
+# slumbR
 
 **Sleep Diaries helper package for R — import, compute, and score.**
 
@@ -44,6 +46,8 @@ slumbR/
 │   ├── tidy.R                # diary_long(), diary_wide(), study_summary()
 │   └── questionnaires.R      # score_questionnaire(), score_all_questionnaires()
 ├── inst/extdata/             # bundled example exports (3 simulated participants)
+├── man/figures/
+│   └── logo.svg              # hex sticker
 ├── man/                      # roxygen2-generated documentation
 ├── vignettes/
 │   └── getting-started.Rmd  # end-to-end worked example
