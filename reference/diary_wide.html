@@ -3,7 +3,7 @@
 date into a single row, prefixing morning columns with m_ and evening
 columns with e_."><meta property="og:description" content="Merges matching morning and evening entries for the same participant and
 date into a single row, prefixing morning columns with m_ and evening
-columns with e_."><!-- slumbR custom CSS --><style>
+columns with e_."><meta property="og:image" content="https://slumbr.circadia-lab.uk/logo.svg"><!-- slumbR custom CSS --><style>
   /* ── Navbar ── */
   .navbar {
     background-color: #1E3A5F !important;
@@ -22,6 +22,9 @@ columns with e_."><!-- slumbR custom CSS --><style>
     border-bottom: 2px solid #E07A20;
   }
   .navbar small.nav-text { color: #E07A20 !important; }
+
+  /* ── Navbar logo size ── */
+  .navbar-brand img { height: 40px; width: auto; }
 
   /* ── Sidebar TOC links — force navy, never light ── */
   .sidebar .nav-link,
@@ -105,8 +108,7 @@ columns with e_."><!-- slumbR custom CSS --><style>
 </nav><div class="container template-reference-topic">
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-
-      <h1>Pivot diary entries to wide format — one row per participant per night</h1>
+      <img src="../logo.svg" class="logo" alt=""><h1>Pivot diary entries to wide format — one row per participant per night</h1>
       <small class="dont-index">Source: <a href="https://github.com/circadia-bio/slumbR/blob/main/R/tidy.R" class="external-link"><code>R/tidy.R</code></a></small>
       <div class="d-none name"><code>diary_wide.Rd</code></div>
     </div>

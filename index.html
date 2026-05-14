@@ -18,6 +18,7 @@
 ">
 <meta property="og:description" content="An R package for processing, scoring, and visualising sleep diary data collected with the Sleep Diaries app. Built by the Circadia Lab at Northumbria University.
 ">
+<meta property="og:image" content="https://slumbr.circadia-lab.uk/logo.svg">
 <!-- slumbR custom CSS --><style>
   /* ── Navbar ── */
   .navbar {
@@ -37,6 +38,9 @@
     border-bottom: 2px solid #E07A20;
   }
   .navbar small.nav-text { color: #E07A20 !important; }
+
+  /* ── Navbar logo size ── */
+  .navbar-brand img { height: 40px; width: auto; }
 
   /* ── Sidebar TOC links — force navy, never light ── */
   .sidebar .nav-link,
@@ -130,9 +134,12 @@
   </div>
 </nav><div class="container template-home">
 <div class="row">
-  <main id="main" class="col-md-9"><div class="section level1">
-<div class="page-header"><h1 id="sleeping_bed-slumbr">🛌 slumbR<a class="anchor" aria-label="anchor" href="#sleeping_bed-slumbr"></a>
-</h1></div>
+  <main id="main" class="col-md-9"><p><img src="reference/figures/logo.svg" align="right" height="140"></p>
+<div class="section level1">
+<div class="page-header">
+<img src="logo.svg" class="logo" alt=""><h1 id="slumbr">slumbR<a class="anchor" aria-label="anchor" href="#slumbr"></a>
+</h1>
+</div>
 <p><strong>Sleep Diaries helper package for R — import, compute, and score.</strong></p>
 <p><a href="./LICENSE"><img src="https://img.shields.io/badge/License-MIT-yellow.svg" alt="License: MIT"></a> <a href="https://www.r-project.org/" class="external-link"><img src="https://img.shields.io/badge/R-%3E%3D4.1-276DC3" alt="R"></a> <a href="https://github.com/circadia-bio/slumbR/actions/workflows/R-CMD-check.yaml" class="external-link"><img src="https://github.com/circadia-bio/slumbR/actions/workflows/R-CMD-check.yaml/badge.svg" alt="R CMD CHECK"></a> <a href="https://github.com/circadia-bio/slumbR" class="external-link"><img src="https://img.shields.io/badge/status-early%20development-orange" alt="Status"></a></p>
 <hr>
@@ -171,6 +178,8 @@
 │   ├── tidy.R                # diary_long(), diary_wide(), study_summary()
 │   └── questionnaires.R      # score_questionnaire(), score_all_questionnaires()
 ├── inst/extdata/             # bundled example exports (3 simulated participants)
+├── man/figures/
+│   └── logo.svg              # hex sticker
 ├── man/                      # roxygen2-generated documentation
 ├── vignettes/
 │   └── getting-started.Rmd  # end-to-end worked example
@@ -470,6 +479,7 @@
 <p>Copyright © Lucas França, Mario Leocadio-Miguel, 2025</p>
 </div>
 </div>
+
   </main><aside class="col-md-3"><div class="links">
 <h2 data-toc-skip>Links</h2>
 <ul class="list-unstyled">

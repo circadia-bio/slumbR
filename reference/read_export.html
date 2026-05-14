@@ -3,7 +3,7 @@
 app and returns a structured list with raw entries, parsed diary data, and
 questionnaire results."><meta property="og:description" content="Parses one participant's JSON export file as produced by the Sleep Diaries
 app and returns a structured list with raw entries, parsed diary data, and
-questionnaire results."><!-- slumbR custom CSS --><style>
+questionnaire results."><meta property="og:image" content="https://slumbr.circadia-lab.uk/logo.svg"><!-- slumbR custom CSS --><style>
   /* ── Navbar ── */
   .navbar {
     background-color: #1E3A5F !important;
@@ -22,6 +22,9 @@ questionnaire results."><!-- slumbR custom CSS --><style>
     border-bottom: 2px solid #E07A20;
   }
   .navbar small.nav-text { color: #E07A20 !important; }
+
+  /* ── Navbar logo size ── */
+  .navbar-brand img { height: 40px; width: auto; }
 
   /* ── Sidebar TOC links — force navy, never light ── */
   .sidebar .nav-link,
@@ -105,8 +108,7 @@ questionnaire results."><!-- slumbR custom CSS --><style>
 </nav><div class="container template-reference-topic">
 <div class="row">
   <main id="main" class="col-md-9"><div class="page-header">
-
-      <h1>Read a single Sleep Diaries JSON export</h1>
+      <img src="../logo.svg" class="logo" alt=""><h1>Read a single Sleep Diaries JSON export</h1>
       <small class="dont-index">Source: <a href="https://github.com/circadia-bio/slumbR/blob/main/R/import.R" class="external-link"><code>R/import.R</code></a></small>
       <div class="d-none name"><code>read_export.Rd</code></div>
     </div>
