@@ -2,7 +2,6 @@ url: https://slumbr.circadia-lab.uk
 
 template:
   bootstrap: 5
-  logo: man/figures/logo.svg
   bslib:
     # ── Colours ──────────────────────────────────────────────────────────────
     bg:              "#EEF5FF"          # app background
@@ -58,6 +57,9 @@ template:
         /* ── Navbar logo size ── */
         .navbar-brand img { height: 40px; width: auto; }
 
+        /* ── Remove border under page title ── */
+        .page-header { border-bottom: none !important; }
+
         /* ── Sidebar TOC links — force navy, never light ── */
         .sidebar .nav-link,
         .sidebar a,
@@ -102,6 +104,9 @@ template:
         /* ── Search ── */
         #search-input { border-color: #4A7BB5; }
       </style>
+
+# Logo — must be top-level, not nested under template:
+logo: man/figures/logo.svg
 
 home:
   title: "slumbR — R tools for sleep diary research"

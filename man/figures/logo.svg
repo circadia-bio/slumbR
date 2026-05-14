@@ -1,15 +1,17 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="100%" viewBox="0 0 680 784" role="img">
+<svg xmlns="http://www.w3.org/2000/svg" width="181" height="209" viewBox="0 0 680 785" role="img">
   <title>slumbR hex sticker</title>
-  <desc>Hex sticker for slumbR R package featuring a pillow icon and floating Zs on a deep navy background</desc>
+  <desc>Hex sticker for slumbR R package</desc>
 
   <defs>
-    <clipPath id="hc"><polygon points="340,42 580,177 580,607 340,742 100,607 100,177"/></clipPath>
+    <clipPath id="hc">
+      <polygon points="340,0 680,196 680,589 340,785 0,589 0,196"/>
+    </clipPath>
   </defs>
 
-  <polygon points="340,42 580,177 580,607 340,742 100,607 100,177" fill="#1E3A5F"/>
-  <polygon points="340,60 564,190 564,594 340,724 116,594 116,190" fill="none" stroke="#4A7BB5" stroke-width="1.5" opacity="0.4"/>
+  <polygon points="340,0 680,196 680,589 340,785 0,589 0,196" fill="#1E3A5F"/>
+  <polygon points="340,20 660,208 660,577 340,765 20,577 20,208" fill="none" stroke="#4A7BB5" stroke-width="1.5" opacity="0.4"/>
 
-  <g transform="translate(210,207) scale(0.508)" fill="#EEF5FF">
+  <g transform="translate(176,146) scale(0.64)" fill="#EEF5FF">
     <path d="M490.995,372.101c28.034-74.438,28-157.954-0.065-231.535l10.856-21.717c18.808-37.506-21.354-77.092-58.584-58.404
       L420.685,71.96C313.086,41.987,197.269,42.157,91.993,72.043L68.68,60.386C31.829,41.924-8.699,81.089,10.303,119.019
       l10.703,20.785c-28.023,74.431-28.012,157.952,0.055,231.545l-10.856,21.717c-18.839,37.654,21.526,76.999,58.606,58.387
@@ -24,11 +26,11 @@
       c43.009-34.872,63.685-52.742,63.685-77.597C345.882,208.086,331.587,189.712,309.445,189.712z"/>
   </g>
 
-  <text x="450" y="250" font-family="Georgia, serif" font-size="42" font-weight="700" fill="#E07A20">Z</text>
-  <text x="496" y="208" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#E07A20" opacity="0.75">Z</text>
-  <text x="531" y="174" font-family="Georgia, serif" font-size="21" font-weight="700" fill="#E07A20" opacity="0.5">Z</text>
+  <text x="415" y="272" font-family="Georgia, serif" font-size="54" font-weight="700" fill="#E07A20">Z</text>
+  <text x="468" y="218" font-family="Georgia, serif" font-size="40" font-weight="700" fill="#E07A20" opacity="0.78">Z</text>
+  <text x="512" y="174" font-family="Georgia, serif" font-size="28" font-weight="700" fill="#E07A20" opacity="0.5">Z</text>
 
-  <text x="340" y="574" text-anchor="middle" font-family="'Livvic', Georgia, sans-serif" font-size="66" font-weight="700" fill="#EEF5FF" letter-spacing="1">slumb<tspan fill="#E07A20">R</tspan></text>
+  <text x="340" y="600" text-anchor="middle" font-family="'Livvic', Georgia, sans-serif" font-size="80" font-weight="700" fill="#EEF5FF" letter-spacing="1">slumb<tspan fill="#E07A20">R</tspan></text>
 
-  <polygon points="340,42 580,177 580,607 340,742 100,607 100,177" fill="none" stroke="#4A7BB5" stroke-width="5"/>
+  <polygon points="340,0 680,196 680,589 340,785 0,589 0,196" fill="none" stroke="#4A7BB5" stroke-width="6"/>
 </svg>
