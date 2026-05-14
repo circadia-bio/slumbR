@@ -1,4 +1,4 @@
-# slumbR
+# 🛌 slumbR
 
 **Sleep Diaries helper package for R — import, compute, and score.**
 
