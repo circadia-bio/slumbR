@@ -1,4 +1,4 @@
-# slumbR <img src="man/figures/logo.svg" align="right" height="140"/>
+# 🛌 slumbR <img src="man/figures/logo.svg" align="right" height="140"/>
 
 **Sleep Diaries helper package for R — import, compute, and score.**
 
