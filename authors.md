@@ -11,7 +11,7 @@
 ## Citation
 
 Source:
-[`DESCRIPTION`](https://github.com/circadia-bio/slumbR/blob/v0.1.0/DESCRIPTION)
+[`DESCRIPTION`](https://github.com/circadia-bio/slumbR/blob/main/DESCRIPTION)
 
 França L, Leocadio-Miguel M (2026). *slumbR: Sleep Diaries Helper
 Package for R*. R package version 0.1.0,
