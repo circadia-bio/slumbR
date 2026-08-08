@@ -3,7 +3,7 @@ pkgdown: 2.2.1
 pkgdown_sha: ~
 articles:
   getting-started: getting-started.html
-last_built: 2026-08-08T20:20Z
+last_built: 2026-08-08T20:32Z
 urls:
   reference: https://slumbr.circadia-lab.uk/reference
   article: https://slumbr.circadia-lab.uk/articles
