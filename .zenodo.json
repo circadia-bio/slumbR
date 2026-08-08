@@ -1,0 +1,34 @@
+{
+  "title": "slumbR: Sleep Diaries Helper Package for R",
+  "description": "A companion package for the Sleep Diaries app. Provides tools to import participant JSON exports, compute standard sleep variables (sleep onset latency, total sleep time, sleep efficiency, WASO, etc.), re-score validated sleep questionnaires (ESS, ISI, DBAS-16, MEQ, PSQI, RU-SATED, STOP-BANG, MCTQ), and assemble tidy study-level data frames ready for downstream analysis.",
+  "creators": [
+    {
+      "name": "França, Lucas",
+      "affiliation": "Northumbria University",
+      "orcid": "0000-0003-0853-1319"
+    },
+    {
+      "name": "Leocadio-Miguel, Mario",
+      "affiliation": "Northumbria University",
+      "orcid": "0000-0002-7248-3529"
+    }
+  ],
+  "license": "MIT",
+  "upload_type": "software",
+  "access_right": "open",
+  "keywords": [
+    "sleep",
+    "sleep diary",
+    "actigraphy",
+    "chronobiology",
+    "R package",
+    "Circadia Lab"
+  ],
+  "related_identifiers": [
+    {
+      "identifier": "https://github.com/circadia-bio/slumbR",
+      "relation": "isSupplementTo",
+      "resource_type": "software"
+    }
+  ]
+}
